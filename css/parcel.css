@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  min-height: 1000px;
+}
+nav {
+  width: 100%;
+  background: #333;
+  height: 16px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+nav .title {
+  display: block;
+  margin: 5px auto;
+  width: 700px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+nav .title__parcel {
+  display: inline-block;
+  padding: 0 5px 1px;
+  border: solid 1px rgba(255, 255, 255, 0.4);
+}
+nav:hover {
+  height: 26px;
+}
+.parallax {
+  width: 100%;
+  margin-top: 1000px;
+  background: white;
+}
+.image {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.quoted {
+  margin: 0 auto;
+  padding: 200px 0 0;
+  width: 700px;
+  letter-spacing: 0.01rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+.quoted__title {
+  margin: 0 0 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.quoted__text {
+  font-size: 1.35em;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.9);
+}
+.ambience {
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.author {
+  position: relative;
+  z-index: 1;
+  min-height: 100px;
+  width: 700px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background: white;
+}
+.author__avatar {
+  display: block;
+  float: left;
+  width: 75px;
+  height: 75px;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  border-radius: 50%;
+}
+.author__name {
+  margin: 0 0 0 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  color: #999;
+}
+.author__bio {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+@media screen and (max-width: 768px) {
+  nav .title {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .author {
+    width: 100%;
+  }
+  .quoted {
+    width: 100%;
+    padding: 200px 20px 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .image {
+    background-size: auto 100%;
+  }
+}
