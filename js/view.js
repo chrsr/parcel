@@ -1,0 +1,5 @@
+
+var parcel = (function () {
+
+
+}());

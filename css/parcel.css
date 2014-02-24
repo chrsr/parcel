@@ -74,6 +74,7 @@ nav:hover {
   width: 40px;
   height: 40px;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .author {
   position: relative;

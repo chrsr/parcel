@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="parcel">
+    <head>
+        <meta charset="utf-8">
+        <title>Parcel</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/parcel.css">
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="js/create.js"></script>
+    </head>
+    <body>
+
+        <nav>
+            <h1 class="title">
+                <span class="title__parcel">Parcel</span>
+            </h1>
+        </nav>
+
+
+        <div ng-app="parcel" ng-controller="CreateCtrl">
+
+            {{data}}
+
+        </div>
+
+
+        <label for="instagram">Instagram Photograph</label>
+        <input type="text" ng-model="instagram" placeholder="Instagram photo">
+
+        <p>{{instagram}}</p>
+
+        <label for="soundcloud">Soundcloud Song</label>
+        <input type="text" ng-model="soundcloud" placeholder="Sound cloud music">
+
+        <p>{{soundcloud}}</p>
+
+        <label for="text">Text</label>
+        <textarea name="text" ng-model="text"></textarea>
+
+        <p>{{text}}</p>
+    </body>
+</html>
